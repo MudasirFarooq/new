@@ -19,15 +19,15 @@ function App() {
   
   return (
     <Router>
-      <Login/>
+      {/* <Login/> */}
       <NotificationList/>
-      {/* <Routes>
+      <Routes>
     <Route exact path="/" element={ <Home />} />   
     <Route exact path="/products" element={<Allproduct/>} />
     <Route exact path="/cart"  element={<CartMain/> } />  
     <Route exact path="/detail/:id" element={ <ProductDetail/>} />   
 
-      </Routes> */}
+      </Routes>
     </Router>
   );
 }

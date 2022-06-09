@@ -27,8 +27,13 @@ export const MyActions = (state = initialState, action) => {
             return item.product.id === action.payload.id
         })
         if(obj){
-            obj.quantity ++
-            return state
+             obj.quantity ++
+            return {
+                ...state,
+                // cart : newobj,
+                notification : [ ...state.notification , {id: action.payload.id , type : "alert-info" , massage : 'product added cart'} ]
+
+            }
         }
           return {
             ...state ,

@@ -75,19 +75,19 @@ function Login(props) {
                     <input type="text" className="form-control" id="exampleInputname" aria-describedby="emailHelp" 
                     name="username"  onChange={changehandle}/>
                 </div>
-                <p>{formErrors.username}</p>
+                <p className='p'>{formErrors.username}</p>
                 <div className="">
                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                     <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     name='email'  onChange={changehandle} />
                 </div>
-                <p>{formErrors.email}</p>
+                <p className='p'> {formErrors.email}</p>
                 <div className="">
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" 
                     name='password' onChange={changehandle}/>
                 </div>
-                <p>{formErrors.password}</p>
+                <p className='p'>{formErrors.password}</p>
 
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
